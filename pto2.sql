@@ -1,3 +1,5 @@
+-- Listar los códigos y nombres de los medicamentos que fueron vendidos en todas las farmacias 
+
 SELECT m.idMedicamento
 FROM medicamentos m
 WHERE NOT EXISTS (

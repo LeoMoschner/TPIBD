@@ -1,3 +1,5 @@
+-- Mostrar cantidad de afiliados crónicos y eventuales que compraron medicamentos en la farmacia de Resistencia en la última semana 
+
 SELECT
     COUNT(DISTINCT CASE WHEN AfiCro.idAfiliado IS NULL THEN Afi.idAfiliado END) AS CantAfiliadosNoCronicos,
     COUNT(DISTINCT AfiCro.idAfiliado) AS CantAfiliadosCronicos

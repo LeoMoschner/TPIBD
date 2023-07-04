@@ -1,3 +1,5 @@
+-- Identificar para una farmacia determinada cuales son los medicamentos sin stock en la misma pero con stock en deposito central 
+
 SELECT SD.idMedicamento
 FROM Depositos Dep
 JOIN StockDeposito SD ON Dep.idDeposito = SD.idDeposito
